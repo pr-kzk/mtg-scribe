@@ -1,0 +1,10 @@
+/* Sidebar collapsed (desktop) */
+.app.nav-hidden {
+  grid-template-columns: 360px 1fr;
+}
+.app.nav-hidden.settings-view {
+  grid-template-columns: 1fr;
+}
+.app.nav-hidden > .nav {
+  display: none;
+}

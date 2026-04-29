@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, type MouseEvent, type ReactNode } from "react";
-import { useFocusTrap } from "../hooks/useFocusTrap.ts";
-import { useEscapeKey } from "../hooks/useEscapeKey.ts";
+import { useFocusTrap } from "@/hooks/useFocusTrap.ts";
+import { useEscapeKey } from "@/hooks/useEscapeKey.ts";
 
 interface ModalProps {
   title: string;

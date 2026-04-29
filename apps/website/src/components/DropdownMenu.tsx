@@ -1,15 +1,8 @@
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
-import { Icon, type IconName } from "./Icon.tsx";
+import { Icon } from "./Icon.tsx";
+import type { DropdownEntry, DropdownItem } from "@/types/dropdown.ts";
 
-export interface DropdownItem {
-  label: string;
-  icon?: IconName;
-  kbd?: string;
-  danger?: boolean;
-  onClick?: () => void;
-}
-
-export type DropdownEntry = DropdownItem | { divider: true };
+export type { DropdownEntry, DropdownItem } from "@/types/dropdown.ts";
 
 interface DropdownMenuProps {
   items: DropdownEntry[];

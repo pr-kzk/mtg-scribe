@@ -1,4 +1,4 @@
-import type { Meeting } from "../types/meeting.ts";
+import type { Meeting } from "@/types/meeting.ts";
 import { fmtFullDate, fmtRange } from "./format.ts";
 
 export function meetingToMarkdown(m: Meeting): string {

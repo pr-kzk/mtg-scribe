@@ -1,14 +1,14 @@
 import {
   createContext,
+  use,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useState,
   type ReactNode,
 } from "react";
 import { ACCENTS } from "./accents.ts";
-import type { AccentName, Theme, Tweaks } from "../types/ui.ts";
+import type { AccentName, Theme, Tweaks } from "@/types/ui.ts";
 
 const STORAGE_KEY = "mtg-scribe.tweaks.v1";
 
@@ -79,9 +79,6 @@ export function ThemeProvider({
     root.style.setProperty("--accent", a.color);
     root.style.setProperty("--accent-strong", a.strong);
     root.style.setProperty("--accent-soft", a.soft);
-  }, [tweaks]);
-
-  useEffect(() => {
     try {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(tweaks));
     } catch {
@@ -105,7 +102,7 @@ export function ThemeProvider({
 }
 
 export function useTheme(): ThemeContextValue {
-  const ctx = useContext(ThemeContext);
+  const ctx = use(ThemeContext);
   if (!ctx) throw new Error("useTheme must be used within ThemeProvider");
   return ctx;
 }

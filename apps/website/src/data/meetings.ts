@@ -1,4 +1,4 @@
-import type { Meeting } from "../types/meeting.ts";
+import type { Meeting } from "@/types/meeting.ts";
 
 export const MOCK_MEETINGS: Meeting[] = [
   {

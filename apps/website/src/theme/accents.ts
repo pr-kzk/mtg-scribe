@@ -1,10 +1,4 @@
-import type { AccentName } from "../types/ui.ts";
-
-export interface AccentColors {
-  color: string;
-  strong: string;
-  soft: string;
-}
+import type { AccentColors, AccentName } from "@/types/ui.ts";
 
 export const ACCENTS: Record<AccentName, AccentColors> = {
   indigo: { color: "#5b6cf9", strong: "#4451e0", soft: "rgba(91, 108, 249, 0.12)" },

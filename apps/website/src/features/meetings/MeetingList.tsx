@@ -1,8 +1,8 @@
 import { Fragment, type ReactNode } from "react";
-import { Icon } from "../../components/Icon.tsx";
-import { fmtDate, groupMeetings } from "../../lib/format.ts";
-import type { Meeting } from "../../types/meeting.ts";
-import type { ListView } from "../../types/ui.ts";
+import { Icon } from "@/components/Icon.tsx";
+import { fmtDate, groupMeetings } from "@/lib/format.ts";
+import type { Meeting } from "@/types/meeting.ts";
+import type { ListView } from "@/types/ui.ts";
 
 interface MeetingListProps {
   meetings: Meeting[];

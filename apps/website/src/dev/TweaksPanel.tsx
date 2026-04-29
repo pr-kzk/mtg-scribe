@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { useTheme } from "../theme/ThemeProvider.tsx";
-import { ACCENT_LABELS, ACCENTS } from "../theme/accents.ts";
-import type { AccentName, Theme } from "../types/ui.ts";
+import { useTheme } from "@/theme/ThemeProvider.tsx";
+import { ACCENT_LABELS, ACCENTS } from "@/theme/accents.ts";
+import type { AccentName, Theme } from "@/types/ui.ts";
 
 const TWEAKS_STYLE = `
 .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;

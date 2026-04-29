@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Modal } from "../src/components/Modal.tsx";
+import { Modal } from "@/components/Modal.tsx";
 
 describe("Modal", () => {
   it("renders with dialog role and accessible title", () => {

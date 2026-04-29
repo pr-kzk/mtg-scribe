@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { MeetingList } from "../src/features/meetings/MeetingList.tsx";
-import { MOCK_MEETINGS } from "../src/data/meetings.ts";
+import { MeetingList } from "@/features/meetings/MeetingList.tsx";
+import { MOCK_MEETINGS } from "@/data/meetings.ts";
 
 const baseProps = {
   meetings: MOCK_MEETINGS,

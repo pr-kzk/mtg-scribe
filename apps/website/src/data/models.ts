@@ -1,4 +1,9 @@
-import type { Model } from "../types/models.ts";
+export interface Model {
+  id: string;
+  name: string;
+  desc: string;
+  size: string;
+}
 
 export const MOCK_LLM_MODELS: Model[] = [
   { id: "llama-3.1-8b", name: "Llama 3.1 8B Instruct", desc: "バランス型・推奨", size: "4.7 GB" },

@@ -1,4 +1,4 @@
-import type { Meeting } from "../types/meeting.ts";
+import type { Meeting } from "@/types/meeting.ts";
 
 const pad2 = (n: number): string => String(n).padStart(2, "0");
 const sameDay = (a: Date, b: Date): boolean => a.toDateString() === b.toDateString();

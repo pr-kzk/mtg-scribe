@@ -1,0 +1,91 @@
+/* ============================================
+   MTG Scribe - Design System
+   ============================================ */
+
+:root {
+  --accent: #5b6cf9;
+  --accent-soft: rgba(91, 108, 249, 0.12);
+  --accent-strong: #4451e0;
+  --accent-fg: #ffffff;
+
+  --speaker-1: #5b6cf9;
+  --speaker-2: #16a394;
+  --speaker-3: #e07a3c;
+  --speaker-4: #c552c2;
+  --speaker-5: #4592d8;
+
+  --rec-red: #e5484d;
+  --success: #16a394;
+  --warning: #e0a020;
+
+  --font-sans:
+    "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+    "Noto Sans JP", "Meiryo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-full: 999px;
+}
+
+:root,
+[data-theme="light"] {
+  --bg: #fbfbfa;
+  --bg-elev: #ffffff;
+  --bg-subtle: #f4f4f2;
+  --bg-hover: #f0f0ee;
+  --bg-active: #e9e9e6;
+
+  --border: #e8e8e4;
+  --border-strong: #d6d6d1;
+  --border-focus: var(--accent);
+
+  --fg: #1a1a17;
+  --fg-muted: #5e5e58;
+  --fg-subtle: #8b8b84;
+  --fg-faint: #b8b8b1;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.12);
+
+  --scrim: rgba(20, 20, 18, 0.4);
+}
+
+[data-theme="dark"] {
+  --bg: #0e0e10;
+  --bg-elev: #161618;
+  --bg-subtle: #1c1c1f;
+  --bg-hover: #232327;
+  --bg-active: #2a2a2f;
+
+  --border: #25252a;
+  --border-strong: #34343a;
+  --border-focus: var(--accent);
+
+  --fg: #ededec;
+  --fg-muted: #a8a8a4;
+  --fg-subtle: #767672;
+  --fg-faint: #4a4a48;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.6);
+
+  --scrim: rgba(0, 0, 0, 0.6);
+}

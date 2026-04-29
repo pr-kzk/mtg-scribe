@@ -1,0 +1,125 @@
+/* ============================================
+   Markdown editor / preview
+   ============================================ */
+.detail-scroll.mode-edit,
+.detail-scroll.mode-split {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.md-editor-wrap {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  background: var(--bg-elev);
+}
+
+.md-editor {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--bg-elev);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  padding: var(--s-8) var(--s-10);
+  resize: none;
+  tab-size: 2;
+}
+
+.md-split {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.md-split-pane {
+  overflow-y: auto;
+  display: flex;
+  min-width: 0;
+}
+.md-split-pane:first-child {
+  border-right: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+.md-split-preview {
+  background: var(--bg);
+}
+.md-split .md-editor {
+  padding: var(--s-6);
+}
+
+.md-preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.md-pv-h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  padding-bottom: var(--s-3);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--s-2);
+}
+.md-pv-h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--border);
+  margin-top: var(--s-5);
+  margin-bottom: var(--s-1);
+}
+.md-pv-hash {
+  color: var(--fg-faint);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.7em;
+  margin-right: var(--s-2);
+}
+.md-pv-p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--fg);
+  text-wrap: pretty;
+}
+.md-pv-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.md-pv-ul li {
+  padding-left: var(--s-5);
+  position: relative;
+  line-height: 1.7;
+  color: var(--fg);
+}
+.md-pv-ul li::before {
+  content: "-";
+  position: absolute;
+  left: 4px;
+  color: var(--fg-faint);
+  font-weight: 600;
+}
+.md-pv-p strong,
+.md-pv-ul li strong {
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.view-segment {
+  grid-template-columns: repeat(3, auto);
+}
+.view-segment .segment-btn {
+  padding: 0 var(--s-3);
+  height: 28px;
+}
+.view-segment .segment-btn span {
+  line-height: 1;
+}

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { parseInline, parseMarkdown } from "../lib/markdown.ts";
+import { parseInline, parseMarkdown } from "@/lib/markdown.ts";
 
 interface MarkdownPreviewProps {
   md: string;

@@ -1,0 +1,44 @@
+/* Transcript (within details) */
+.transcript {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+.transcript-line {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: var(--s-4);
+  align-items: flex-start;
+}
+.transcript-time {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-subtle);
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.transcript-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  min-width: 0;
+}
+.transcript-speaker {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: 12px;
+  font-weight: 600;
+}
+.speaker-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.transcript-text {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--fg);
+  text-wrap: pretty;
+}

@@ -1,0 +1,25 @@
+/* Empty */
+.empty-state {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: var(--s-10);
+}
+.empty-state-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-4);
+  text-align: center;
+  color: var(--fg-subtle);
+  max-width: 320px;
+}
+.empty-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-lg);
+  background: var(--bg-subtle);
+  display: grid;
+  place-items: center;
+  color: var(--fg-faint);
+}

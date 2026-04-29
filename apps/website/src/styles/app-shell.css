@@ -1,0 +1,14 @@
+/* App shell — three columns by default */
+.app {
+  display: grid;
+  grid-template-columns: 240px 360px 1fr;
+  height: 100vh;
+  background: var(--bg);
+}
+
+/* Settings view extends list pane area to detail */
+.app.settings-view {
+  grid-template-columns: 240px 1fr;
+}
+
+/* Detail-only view applies only on mobile (see media query below) */

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { Icon, type IconName } from "../../components/Icon.tsx";
-import type { View } from "../../types/ui.ts";
+import { Icon, type IconName } from "@/components/Icon.tsx";
+import type { View } from "@/types/ui.ts";
 
 interface NavRailProps {
   view: View;

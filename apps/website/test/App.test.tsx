@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { App } from "../src/App.tsx";
-import { ThemeProvider } from "../src/theme/ThemeProvider.tsx";
+import { App } from "@/App.tsx";
+import { ThemeProvider } from "@/theme/ThemeProvider.tsx";
 
 const renderApp = () =>
   render(
