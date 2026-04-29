@@ -3,14 +3,29 @@ packages:
   - packages/*
   - tools/*
 
-catalogMode: prefer
-
 catalog:
+  "@fontsource-variable/inter": ^5.2.8
+  "@fontsource-variable/jetbrains-mono": ^5.2.8
+  "@fontsource/noto-sans-jp": ^5.2.9
+  "@testing-library/jest-dom": ^6.9.1
+  "@testing-library/react": ^16.3.2
+  "@testing-library/user-event": ^14.6.1
+  "@types/jest-axe": ^3.5.9
   "@types/node": ^24
+  "@types/react": ^19.2.14
+  "@types/react-dom": ^19.2.3
+  "@vitejs/plugin-react-swc": ^4.3.0
+  jest-axe: ^10.0.0
+  jsdom: ^29.1.0
+  react: ^19.2.5
+  react-dom: ^19.2.5
+  react-error-boundary: ^6.1.1
   typescript: ^5
   vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
   vite-plus: latest
+  vitest: npm:@voidzero-dev/vite-plus-test@^0.1.20
+
+catalogMode: prefer
 overrides:
   vite: "catalog:"
   vitest: "catalog:"
